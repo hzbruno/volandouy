@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VolandoUy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/vuelo.css">
+</head>
+<body>
+    
+    <header id="main-header">
+        
+        <div class="logo"><img class="VolandoUy" onclick="location.href ='./indexCliente.html' " src="../../imagenes/logo-uy-png.png"/>  </div>
+        <div class="search-container">
+
+            <i class="fas fa-search"></i>
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <button class="search-btn">Buscar</button>;
+        </div>
+
+        <div class="ses-container-logged" id="isLogged">
+            <button class="username-btn" id = "botonNickname">ejstar</button> 
+                <div class="dropdown-menu-user">
+                    <div onclick="location.href ='./consultaUsuarioCliente3.html'">Mi perfil</div>
+                    <div onclick="location.href ='../visitante/indexVisitante.html'">Cerrar sesion</div>
+                </div>
+        </div>
+
+    </header>
+
+
+    <div class="content-container">
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="cursor: pointer;" onclick="location.href='./consultaUsuarioCliente2.html'">Mi Perfil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="cursor: pointer;" onclick="location.href='./consultarUsuariosCliente.html'">Consultar Usuarios</td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td style="cursor: pointer;" onclick="location.href ='./consultaReservaCliente1.html' ">Consulta Reserva</td>
+                    </tr>
+                <thead>
+                    <tr>
+                        <th>Categorías</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>America</td>
+                    </tr>
+                    <tr>
+                        <td>Temporada</td>
+                    </tr>
+                    <tr>
+                        <td>Cortos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="vuelos-container">
+
+            <div class="vuelo-item">
+                <img class="vuelo-img" src="../../imagenes/VU09.jpg">
+                <h2 class="vuelo-nombre">AR13801059</h2>
+                <p class="vuelo-nombre"><b>Nombre: </b>AR13801059</p>
+                <p class="vuelo-fecha"><b>Fecha: </b>30/11/2024</p>
+                <p class="vuelo-duracion"><b>Duracion: </b>00:30</p>
+                <p class="vuelo-cantTurista"><b>Cantidad máxima asientos turistas: </b>162</p>
+                <p class="vuelo-cantTurista"><b>Cantidad máxima asientos ejecutivos: </b>8</p>
+                <p class="vuelo-fechaAlta"><b>Fecha Alta: </b>27/08/2024</p>
+            </div>
+
+            <div class="user-btn" onclick="location.href='./reservaVueloCliente2.html'">Reservar vuelo</div>
+        
+        </div>
+
+        <div class="Aerolinea-Ruta">
+            <label for="aerolinea">Aerolinea</label>
+            <button class="aerolinea-btn" , id="aerolinea-btn" onclick="location.href='./consultaUsuarioCliente1.html'">Aerolíneas Argentinas</button> 
+            <label for="ruta">Ruta</label>
+
+
+            <button class="ruta-btn",id="ruta-btn", onclick="location.href='./consultaRutaCliente1.html'">AR1380</button> 
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>

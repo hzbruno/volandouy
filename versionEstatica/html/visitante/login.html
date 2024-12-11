@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/registrar.css">
+
+</head>
+
+<body>
+    <header id="main-header">
+        
+        <div class="logo"><img class="VolandoUy" onclick="location.href ='./indexVisitante.html' " src="../../imagenes/logo-uy-png.png"/>  </div>
+        <div class="search-container">
+
+            <i class="fas fa-search"></i>
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <button class="search-btn">Buscar</button>;
+        </div>
+
+        <div class="dropdown">
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="dropdown-content">
+                <div onclick="location.href ='./login.html'">Login</div>
+                <div onclick="location.href ='./registerCliente.html'">Registrarse como Cliente</div>
+                <div onclick="location.href ='./registerAerolinea.html'">Registrarse como Aerolínea</div>
+            </div>
+
+        </div>
+
+        <div class="ses-container">
+            <button class="user-btn" id="btnLogin" onclick="location.href ='./login.html'">Login</button> 
+            <button class="user-btn" id="btnRegistrar" onclick="location.href ='./registerCliente.html'">Registrarse como Cliente</button> 
+            <button class="user-btn" id="btnRegistrar" onclick="location.href ='./registerAerolinea.html'">Registrarse como Aerolínea</button> 
+        </div>
+
+    </header> 
+
+      <div class="content-container"> 
+        
+        
+      <div class="form-container"> 
+        
+        <form class="register-form">
+            
+            <h2>Login</h2>
+
+            <div class="from-section">
+                
+                <div class="input-container">
+                    <label for="username">Nombre Usuario</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-container">
+                    <label for="pasword">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+            </div>
+            
+            <div class="botones-inicio">
+            <button class="login-btn" type="button" onclick="location.href ='../cliente/indexCliente.html'"> Iniciar Sesión como Cliente </button>
+            <button class="login-btn" type="button" onclick="location.href ='../aerolinea/indexAerolinea.html'"> Iniciar Sesión como Aerolinea </button>
+            </div>
+
+            <div class="sign-in-message" onclick="location.href ='./registerCliente.html'">Crear cuenta de Cliente</div>
+            <div class="sign-in-message" onclick="location.href ='./registerAerolinea.html'">Crear cuenta de Aerolínea</div>
+
+
+
+        </form>
+
+        </div>
+      </div>
+
+
+</body>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/registrar.css">
+
+</head>
+<body>
+    <header id="main-header">
+        
+        <div class="logo"><img class="VolandoUy" onclick="location.href ='./indexVisitante.html' " src="../../imagenes/logo-uy-png.png"/>  </div>
+        <div class="search-container">
+
+            <i class="fas fa-search"></i>
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <button class="search-btn">Buscar</button>;
+        </div>
+
+        <div class="dropdown">
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="dropdown-content">
+                <div onclick="location.href ='./login.html'">Login</div>
+                <div onclick="location.href ='./registerCliente.html'">Registrarse como Cliente</div>
+                <div onclick="location.href ='./registerAerolinea.html'">Registrarse como Aerolínea</div>
+            </div>
+
+        </div>
+
+        <div class="ses-container">
+            <button class="user-btn" id="btnLogin" onclick="location.href ='./login.html'">Login</button> 
+            <button class="user-btn" id="btnRegistrar" onclick="location.href ='./registerCliente.html'">Registrarse como Cliente</button> 
+            <button class="user-btn" id="btnRegistrar" onclick="location.href ='./registerAerolinea.html'">Registrarse como Aerolínea</button> 
+        </div>
+
+    </header>
+
+      <div class="content-container"> 
+        
+        
+      <div class="form-container">
+        <form class="register-form" method = "POST" action = "">
+            <h2>Registrar</h2>
+            
+            
+            <div class="from-section"> 
+
+                <div class="input-container">
+                    <label for="foto">Selecciona una foto</label>
+                    <input type="file" id="foto" name="foto" accept="image/*">
+                </div>
+                
+                <div class="input-container">
+                    <label for="username">Nombre Usuario</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-container">
+                    <label for="pasword">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-container">
+                    <label for="pasword">Repetir contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="input-container">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div> 
+                <div class="input-container">
+                    <label for="nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="fechaNacimiento" value="2024-09-25" />
+                </div>
+                <div class="input-container">
+                    <label for="country">Nacionalidad</label>    
+                    <select id="country" name="country" class="form-control">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Chile">Chile</option>
+                    </select>
+                </div>
+
+                <div class="input-container ">
+                <label for="documentType">Tipo Documento</label>    
+                    <select id="documentType" name="documentType" class="form-control">
+                        <option value="Pasaporte">Pasaporte</option>
+                        <option value="CI">Cedula Identidad</option> 
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="numeroDoc">Numero Documento</label>
+                    <input type="text" id="numeroDoc" name="numeroDoc" required>
+                </div>
+
+            </div>
+
+            <div class="already-have-account" onclick="location.href ='./login.html'">¿Tienes una cuenta? Iniciar sesión</div>
+
+        </form>
+
+        <button class="login-btn" type = "button"> Registrarse </button>
+
+        
+        </div>
+      </div>
+
+</body>
+

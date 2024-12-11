@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VolandoUy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/consulta-usuario.css">
+     
+</head>
+<body>
+    
+    <header id="main-header">
+        
+        <div class="logo"><img class="VolandoUy" onclick="location.href ='./indexAerolinea.html' " src="../../imagenes/logo-uy-png.png"/>  </div>
+        <div class="search-container">
+
+            <i class="fas fa-search"></i>
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <button class="search-btn">Buscar</button>;
+        </div>
+
+        <div class="ses-container-logged" id="isLogged">
+            <button class="username-btn" id = "botonNickname">aerolineas</button> 
+                <div class="dropdown-menu-user">
+                    <div onclick="location.href ='./consultaUsuarioAerolinea1.html'">Mi perfil</div>
+                    <div onclick="location.href ='../visitante/indexVisitante.html'">Cerrar sesion</div>
+                </div>
+        </div>
+
+    </header>
+
+
+    <div class="content-container">
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="cursor: pointer;" onclick="location.href='./consultaUsuarioAerolinea1.html'">Mi Perfil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="cursor: pointer;" onclick="location.href='./consultarUsuariosAerolinea.html'">Consultar Usuarios</td>
+                    </tr>
+                    <tr>
+                        <td style="cursor: pointer;" onclick="location.href ='./crearRutaAerolinea.html' ">Nueva Ruta</td>
+                    </tr>
+                    <tr>
+                        <td style="cursor: pointer;" onclick="location.href ='./consultaReservaAerolinea1.html' ">Consulta Reserva</td>
+                    </tr>
+                <thead>
+                    <tr>
+                        <th>Categorías</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>America</td>
+                    </tr>
+                    <tr>
+                        <td>Temporada</td>
+                    </tr>
+                    <tr>
+                        <td>Cortos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="user-container">
+
+            <div class="info-user">
+
+                <img src="../../imagenes/US01.jpg" alt="User-sm" class="user-image" >
+                <div class="user-info">
+                    <h2 id="nombre">Aerolíneas Argentinas</h2>
+                    <h1 id="nickname">servivioalcliente@aerolineas.com.uy</h1>
+                </div>
+
+            </div>
+    
+            <div class="caja-usr">
+                <div class="aero-perfil-container">
+                <button class="user-btn">Perfil</button>
+                </div>
+                <div class="info-user-container" >
+                   
+                    <div class="infoAerolina">
+                        <!-- <p><b>Nickname: </b>aerolineas</p> -->
+                        <p><b>Nombre: </b>Aerolíneas Argentinas</p>
+                        <p><b>Email: </b>servivioalcliente@aerolineas.com.uy</p>
+                        <p><b>Sitio Web: </b>https://www.aerolineas.com.ar<p>
+                        <p><b>Descripcion: </b>Aerolínea nacional de Argentina que ofrece vuelos directos entre múltiples destinos.</p>
+                    </div>
+    
+                </div>
+    
+            </div>
+
+            
+        </div>
+        <div class="rutas">
+            <label for="rutas">RUTAS</label>
+            <button  class="rutas-btn" , id="rutas-btn" onclick="location.href='./consultaRutaAerolinea1.html'">AR1380</button>
+            <button  class="rutas-btn" , id="rutas-btn" onclick="location.href='./consultaRutaAerolinea2.html'">AR1381</button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

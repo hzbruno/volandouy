@@ -1,0 +1,279 @@
+.pasajes-container h3{
+    color:aqua;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 10px; /* Espacio entre los divs */
+    margin-top: 10px;
+}
+
+.grid-1 {
+    grid-template-columns: repeat(1, 1fr); /* 1 columna */
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+}
+.input-container-btn-p{
+	border:none;
+}
+.activar-container{
+	display:flex;
+}
+
+.tabla-pasajeros-container{
+	height:130px;
+}
+
+.content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    width: 50% auto;
+    min-width: none;
+    height: 45% auto ;
+    border: 2px solid #007BFF;
+    background-color:white ;
+    border-radius: 45px;
+    padding: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    min-width: 400px;
+    min-height: 430px;
+
+}
+
+.form-container h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color:#007BFF;
+}
+
+.form-container h3{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color:#007BFF;
+}
+
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    gap: 10px;
+    
+
+}
+
+.label-precio{
+	margin-right:10px !important;
+}
+
+
+.form-container label{
+    font-size: 1.5rem;
+    margin-right: 45px;
+    width: 45%;
+    font-size: clamp(12px, 2vw, 16px);
+    white-space: nowrap;
+    font-weight: bold;
+    color: #484848;
+    letter-spacing: 0.5px;
+    
+}
+
+.form-container label:after{
+   content: " :";
+   color: #007BFF;
+}
+.form-container label:hover{
+    color: #007BFF;
+ }
+
+ .form-container label.required::before{
+    content: " *";
+    color: red;
+    margin-right: 5px;
+ }
+ 
+ 
+
+
+.form-container input{
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+
+
+}
+.form-container input:hover{
+    background-color:#ddd;
+}
+
+
+.input-container{
+    display: flex;
+    width: 100%;
+
+    
+}
+.input-container-btn{
+    border-radius: 5px;
+    border: 2px solid #007BFF;
+}
+
+.pasajeros-container{
+    text-align: center;    
+    
+}
+
+
+.ruta-conteiner{
+    display: flex;
+    width: 100%;
+    margin:5px;
+    margin-top:20px ;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+
+
+.aerolinea-container{
+    display: none;
+
+}
+.cliente-container{
+    display: none;
+
+}
+.reservar-btn{
+    background-color: white;
+    color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid #007BFF;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: center;
+}
+.reservar-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+.reservar-container{
+    display: flex;
+    justify-content: center;
+}
+.select-user{
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+.form-control{
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.select-ruta{
+    min-width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+.tabla-pasajeros{
+    padding: 0px;
+    border-radius: 0px;
+    width: 100%;
+    overflow:auto;
+    max-height:130px;
+    display: block;
+    background: white;
+    box-shadow: none;
+ }
+
+.tabla-pasajeros-row{
+   padding: 0px;
+   border-radius: 0px;
+
+}
+.tabla-pasajeros-input{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    border: 0px solid #007BFF;
+    padding: 0px;
+    max-width: none;
+    max-height: none;
+}
+.tabla-pasajeros-td{
+    padding: 5px;
+}
+
+
+
+
+#precio-total  {
+    background : white;
+    border-color: #007BFF;
+
+    font-weight: bold;
+    font-size : 1em;
+    color : black;
+    width: 100px;
+	border-radius: 0px;
+    text-align : center;
+    padding : 5px;
+    box-shadow: none; 
+    height: auto;
+}
+
+.pasajeros-container {
+	border-radius: 0px;
+    text-align : center;
+    padding : 5px;
+    box-shadow: none; 
+    width : auto;
+    height: auto;
+    margin-top:20px;
+}

@@ -1,0 +1,30 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<wsdd:deployment xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java" xmlns:metal.plaf.swing.javax="http://metal.plaf.swing.javax"
+    xmlns:wsdd="http://xml.apache.org/axis/wsdd/">
+  <wsdd:service name="MetalLookAndFeel$AATextListener" provider="java:RPC" use="literal"
+      style="wrapped">
+    <wsdd:parameter name="wsdlTargetNamespace" value="http://metal.plaf.swing.javax"/>
+    <wsdd:parameter name="wsdlServiceElement" value="MetalLookAndFeel$AATextListenerService"/>
+    <wsdd:parameter name="schemaQualified" value="http://metal.plaf.swing.javax"/>
+    <wsdd:parameter name="wsdlServicePort" value="MetalLookAndFeel$AATextListener"/>
+    <wsdd:parameter name="className" value="javax.swing.plaf.metal.MetalLookAndFeel$AATextListenerSoapBindingImpl"/>
+    <wsdd:parameter name="wsdlPortType" value="MetalLookAndFeel$AATextListener"/>
+    <wsdd:parameter name="typeMappingVersion" value="1.2"/>
+    <wsdd:parameter name="allowedMethods" value="propertyChange"/>
+    <wsdd:typeMapping qname="metal.plaf.swing.javax:>propertyChangeResponse" type="java:javax.swing.plaf.metal.PropertyChangeResponse"
+        encodingStyle="" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"/>
+    <wsdd:operation name="propertyChange" qname="metal.plaf.swing.javax:propertyChange"
+        soapAction="">
+      <wsdd:parameter qname="metal.plaf.swing.javax:pce" type="XMLSchema:anyType"/>
+    </wsdd:operation>
+  </wsdd:service>
+</wsdd:deployment>

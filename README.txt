@@ -9,3 +9,5 @@ Execute scriptTarea3.sh to create the proper archives
 
 Then inside "Project" is a .sh that execute the central server.
 After that you will need to move the archives inside  the folder target insade each project in "Web" into tomcat webapps folder.
+
+Demo: https://www.youtube.com/watch?v=xBILf6OG5Bs
